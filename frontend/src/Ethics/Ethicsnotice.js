@@ -5,7 +5,7 @@ function Ethicsnotice() {
 
   // Fetch notices
   const fetchNotices = async () => {
-    const res = await fetch('/api/notice/notices');
+    const res = await fetch('https://kirkosam-backend.onrender.com/api/notice/notices');
     const data = await res.json();
     if (res.ok) setNotices(data);
   };

@@ -15,7 +15,7 @@ function Event() {
 
      //fetch events from server
      const fetchEvents = async () => {
-        const response = await fetch('/api/Event');
+        const response = await fetch('https://kirkosam-backend.onrender.com/api/Event');
         const json = await response.json();
         if (response.ok) {
             setEvents(json);
@@ -39,7 +39,7 @@ function Event() {
       //Create new event
       const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch('/api/Event', {
+        const response = await fetch('https://kirkosam-backend.onrender.com/api/Event', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -64,7 +64,7 @@ function Event() {
       };
 
        const handleDelete = async (id) => {
-          const response = await fetch(`/api/Event/${id}`, {
+          const response = await fetch(`https://kirkosam-backend.onrender.com/api/Event/${id}`, {
             method: 'DELETE'
           });
 

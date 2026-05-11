@@ -10,7 +10,7 @@ function Ethicsd() {
   
       useEffect(() => {
         const fetchStudents = async () => {
-          const res = await fetch('/api/register/studentregister');
+          const res = await fetch('https://kirkosam-backend.onrender.com/api/register/studentregister');
           const data = await res.json();
       
           if (res.ok) {

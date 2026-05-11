@@ -13,7 +13,7 @@ function Agelgaydetails() {
 
   // ✅ Fetch all users
   const fetchUsers = async () => {
-    const response = await fetch('/api/agelgayadd');
+    const response = await fetch('https://kirkosam-backend.onrender.com/api/agelgayadd');
     const json = await response.json();
 
     if (response.ok) {
@@ -39,7 +39,7 @@ function Agelgaydetails() {
     const confirmDelete = window.confirm('Are you sure you want to delete this Agelgay?');
     if (!confirmDelete) return;
 
-    const response = await fetch(`/api/agelgayadd/${id}`, {
+    const response = await fetch(`https://kirkosam-backend.onrender.com/api/agelgayadd/${id}`, {
       method: 'DELETE'
     });
 
@@ -49,7 +49,7 @@ function Agelgaydetails() {
   };
 
   const handleUpdate = async (id) => {
-    const response = await fetch(`/api/agelgayadd/${id}`, {
+    const response = await fetch(`https://kirkosam-backend.onrender.com/api/agelgayadd/${id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json'

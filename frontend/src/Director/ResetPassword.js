@@ -8,7 +8,7 @@ function ResetPassword() {
   const handleReset = async (e) => {
     e.preventDefault();
 
-    const response = await fetch('/api/resetpassword', {
+    const response = await fetch('https://kirkosam-backend.onrender.com/api/resetpassword', {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json'

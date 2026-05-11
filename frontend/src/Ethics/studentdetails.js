@@ -16,7 +16,7 @@ const [feeFilter, setFeeFilter] = useState("all")
 
   // ✅ Fetch all users
   const fetchUsers = async () => {
-    const response = await fetch('/api/register/studentregister');
+    const response = await fetch('https://kirkosam-backend.onrender.com/api/register/studentregister');
     const json = await response.json();
 
     if (response.ok) {
@@ -49,7 +49,7 @@ const [feeFilter, setFeeFilter] = useState("all")
    const confirmDelete = window.confirm('Are you sure you want to delete this student?');
     if (!confirmDelete) return;
 
-    const response = await fetch(`/api/register/studentregister/${id}`, {
+    const response = await fetch(`https://kirkosam-backend.onrender.com/api/register/studentregister/${id}`, {
       method: 'DELETE'
       
     });
@@ -61,7 +61,7 @@ const [feeFilter, setFeeFilter] = useState("all")
 
   // ✅ Update user
   const handleUpdate = async (id) => {
-    const response = await fetch(`/api/register/studentregister/${id}`, {
+    const response = await fetch(`https://kirkosam-backend.onrender.com/api/register/studentregister/${id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json'

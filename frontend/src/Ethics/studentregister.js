@@ -48,7 +48,7 @@ function StudentRegister() {
   formData.append('parentPhone2', parentPhone2);
   formData.append('fee', fee);
 
-  const response = await fetch('/api/register/studentregister', {
+  const response = await fetch('https://kirkosam-backend.onrender.com/api/register/studentregister', {
     method: 'POST',
     body: formData   // ❗ NO JSON
   });

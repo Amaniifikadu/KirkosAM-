@@ -14,7 +14,7 @@ function EditAgelgay() {
   // ✅ Load user data
   useEffect(() => {
     const fetchUser = async () => {
-      const res = await fetch(`/api/agelgayadd`);
+      const res = await fetch(`https://kirkosam-backend.onrender.com/api/agelgayadd`);
       const data = await res.json();
 
       const user = data.find(u => u._id === id);
@@ -41,7 +41,7 @@ function EditAgelgay() {
       role
     };
 
-    const res = await fetch(`/api/agelgayadd/${id}`, {
+    const res = await fetch(`https://kirkosam-backend.onrender.com/api/agelgayadd/${id}`, {
       method: "PATCH",
       body: JSON.stringify(updatedUser),
       headers: {

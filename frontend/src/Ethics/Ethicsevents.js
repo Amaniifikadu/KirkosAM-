@@ -7,7 +7,7 @@ const [error, setError] = useState(null);
 
      //fetch events from server
      const fetchEvents = async () => {
-        const response = await fetch('/api/Event');
+        const response = await fetch('https://kirkosam-backend.onrender.com/api/Event');
         const json = await response.json();
         if (response.ok) {
             setEvents(json);

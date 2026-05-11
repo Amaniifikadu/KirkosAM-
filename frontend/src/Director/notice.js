@@ -9,7 +9,7 @@ function Notice() {
 
   // Fetch notices
   const fetchNotices = async () => {
-    const res = await fetch('/api/notice/notices');
+    const res = await fetch('https://kirkosam-backend.onrender.com/api/notice/notices');
     const data = await res.json();
     if (res.ok) setNotices(data);
   };
@@ -22,7 +22,7 @@ function Notice() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch('/api/notice/notices', {
+    const res = await fetch('https://kirkosam-backend.onrender.com/api/notice/notices', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ title, message })
@@ -42,7 +42,7 @@ function Notice() {
   const handleDelete = async (id) => {
     if (!window.confirm("Delete this notice?")) return;
 
-    const res = await fetch(`/api/notice/notices/${id}`, {
+    const res = await fetch(`https://kirkosam-backend.onrender.com/api/notice/notices/${id}`, {
       method: "DELETE"
     });
 

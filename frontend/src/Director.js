@@ -16,7 +16,7 @@ function Director() {
    
    useEffect(() => {
      const fetchAgelgays = async () => {
-       const res = await fetch('/api/agelgayadd');
+       const res = await fetch('https://kirkosam-backend.onrender.com/api/agelgayadd');
        const data = await res.json();
    
        if (res.ok) {

@@ -30,7 +30,7 @@ function Agelgayadd() {
       year
     };
 
-    const response = await fetch('/api/agelgayadd', {
+    const response = await fetch('https://kirkosam-backend.onrender.com/api/agelgayadd', {
       method: 'POST',
       body: JSON.stringify(newUser),
       headers: {
