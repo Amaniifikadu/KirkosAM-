@@ -24,7 +24,7 @@ function Signin() {
 
     const signin = { username, password };
 
-    const response = await fetch('/api/signin', {
+    const response = await fetch('https://kirkosam-backend.onrender.com/api/signin',{
       method: 'POST',
       body: JSON.stringify(signin),
       headers: {
