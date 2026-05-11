@@ -31,10 +31,14 @@ const createAdmin = async () => {
     console.log("✅ Director already exists");
   } 
 };
-
+ const cors = require('cors');
 const app = express()
 
 app.use(express.json())
+app.use(cors({
+  origin: "https://kirkos-am-jnd4.vercel.app",
+  credentials: true
+}));
 
 console.log(process.env.MONGO_URI)
 
@@ -66,3 +70,5 @@ mongoose.connect(process.env.MONGO_URI)
   .catch((err) => {
     console.log(err)
   })
+
+
