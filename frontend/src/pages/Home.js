@@ -14,15 +14,21 @@ function Home() {
   return (
     <div>
       <div className='home'>
+           <div className='amen'>
+                <h1>በስመአብ ወወልድ ወመንፈስ ቅዱስ አሐዱ አምላክ አሜን</h1>
+                <span>መካነ ሰማዕት ቅዱስ ቂርቆስ ቤተ ክርስቲያን ውሉደ ብርሃን ሰንበት ትምህርት ቤት ቅዱስ ቂርቆስ አዳጊዎች ማዕከል</span>
+            </div>
         <div className='home1'>
+          <div className='home-text'>
         <h1>Welcome to Sunday School</h1>
         <p>Learn, Grow, and Have with Bible Stories, Songs, and Friends!</p>
         <button>Join Us Today</button>
         <button>Explore Lessons</button>
         </div>
-        <div className='home2'>
+        <div>
         <img src='Qurban2.jpg' alt='Kurban'/>
         </div>
+      </div>
       </div>
 
        <section className="offer-section">

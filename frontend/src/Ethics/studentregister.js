@@ -146,7 +146,7 @@ function StudentRegister() {
  
         <Col><label> የተማሪ ክፍያ </label>
         <input type="text" 
-        placeholder='የተማሪ ክፍያ'
+        placeholder='ክፍያ'
         value={fee}
         onChange={(e) => setFee(e.target.value)}
         className={emptyFields?.includes('fee') ? 'err' : ''}
@@ -155,28 +155,32 @@ function StudentRegister() {
          </Row>
 
             <Row>
-               <Col> <label>የተማሪ ስም </label>
+               <Col md={3} xs={6}> 
+               <label>የተማሪ ስም </label>
         <input type="text" 
         placeholder='የተማሪ ስም'
         value={firstName}
         onChange={(e) => setFirstName(e.target.value)}
         className={emptyFields?.includes('firstName') ? 'err' : ''}
         /></Col>
-               <Col><label>የአባት ስም </label>
+               <Col md={3} xs={6}>
+               <label>የአባት ስም </label>
         <input type="text" 
         placeholder='የአባት ስም'
         value={fatherName}
         onChange={(e) => setFatherName(e.target.value)}
         className={emptyFields?.includes('fatherName') ? 'err' : ''}
         /></Col>
-               <Col> <label>የአያት ስም </label>
+               <Col md={3} xs={6}> 
+               <label>የአያት ስም </label>
         <input type="text" 
         placeholder='የአያት ስም'
         value={grandFatherName}
         onChange={(e) => setGrandFatherName(e.target.value)}
         className={emptyFields?.includes('grandFatherName') ? 'err' : ''}
         /></Col>
-               <Col><label>የተማሪ የክርስትና ስም </label>
+               <Col md={3} xs={6}>
+               <label>የተማሪ የክርስትና ስም </label>
         <input type="text" 
         placeholder='የተማሪ የክርስትና ስም'
         value={christianName}
@@ -243,7 +247,8 @@ function StudentRegister() {
         </select></Col>
       </Row>
       <Row>
-        <Col><label>የተማሪ የቤት ቁጥር </label>
+        <Col md={3} xs={6}>
+        <label>የተማሪ የቤት ቁጥር </label>
         <input type="text"
           placeholder='የተማሪ የቤት ቁጥር'
           value={houseNumber}
@@ -251,21 +256,24 @@ function StudentRegister() {
           className={emptyFields?.includes('houseNumber') ? 'err' : ''}
         /></Col>
 
-        <Col><label>የተማሪ ወላጅ ስም </label>
+        <Col md={3} xs={6}>
+        <label>የተማሪ ወላጅ ስም </label>
         <input type="text" 
         placeholder='የተማሪ ወላጅ ስም'
         value={parentName}
         onChange={(e) => setParentName(e.target.value)}
         className={emptyFields?.includes('parentName') ? 'err' : ''}
         /></Col>
-        <Col> <label>የተማሪ ወላጅ ስልክ 1 </label>
+        <Col md={3} xs={6}> 
+        <label>የተማሪ ወላጅ ስልክ 1 </label>
         <input type="text" 
         placeholder='የተማሪ ወላጅ ስልክ 1'
         value={parentPhone1}
         onChange={(e) => setParentPhone1(e.target.value)}
         className={emptyFields?.includes('parentPhone1') ? 'err' : ''}
         /></Col>
-        <Col><label>የተማሪ ወላጅ ስልክ 2 </label>
+        <Col md={3} xs={6}>
+        <label>የተማሪ ወላጅ ስልክ 2 </label>
         <input type="text" 
         placeholder='የተማሪ ወላጅ ስልክ 2'
         value={parentPhone2}
