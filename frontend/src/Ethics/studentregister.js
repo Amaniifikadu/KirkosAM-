@@ -100,7 +100,7 @@ function StudentRegister() {
          
          <Container>
          <Row>
-          <Col>
+          <Col md={3} xs={6}>
           <label>ፎቶ</label>
            <input
              type="file"
@@ -111,7 +111,7 @@ function StudentRegister() {
           />
           </Col>
 
-           <Col>
+           <Col md={3} xs={6}>
            <label>ዓመተ ምህረት</label>
                  <select
                 value={year}
@@ -125,7 +125,7 @@ function StudentRegister() {
               <option value="2022">2022</option>
           </select> 
            </Col>
-           <Col> <label>ምድብ </label>
+           <Col md={3} xs={6}> <label>ምድብ </label>
         <select
          placeholder='ምድብ'
          value={mdb}
@@ -144,7 +144,7 @@ function StudentRegister() {
           <option> ጳውሎስ</option>
         </select></Col>
  
-        <Col><label> የተማሪ ክፍያ </label>
+        <Col md={3} xs={6}><label> የተማሪ ክፍያ </label>
         <input type="text" 
         placeholder='ክፍያ'
         value={fee}
@@ -182,20 +182,22 @@ function StudentRegister() {
                <Col md={3} xs={6}>
                <label>የተማሪ የክርስትና ስም </label>
         <input type="text" 
-        placeholder='የተማሪ የክርስትና ስም'
+        placeholder='የክርስትና ስም'
         value={christianName}
         onChange={(e) => setChristianName(e.target.value)}
         className={emptyFields?.includes('christianName') ? 'err' : ''}
         /></Col>
           </Row>
       <Row>
-        <Col> <label>የተማሪ ጾታ </label>
+        <Col md={3} xs={6}> 
+        <label>የተማሪ ጾታ </label>
         <select value={gender} onChange={(e) => setGender(e.target.value)}
           className={emptyFields?.includes('gender') ? 'err' : ''}>
           <option>ወ</option>
           <option>ሴ</option>
         </select></Col>
-        <Col><label>የተማሪ ዕድሜ </label>
+        <Col md={3} xs={6}>
+        <label>የተማሪ ዕድሜ </label>
        <select value={age} onChange={(e) => setAge(e.target.value)}
           className={emptyFields?.includes('age') ? 'err' : ''}>
         <option>5</option>
@@ -212,7 +214,7 @@ function StudentRegister() {
         <option>16</option>
         <option>17</option>
        </select></Col>
-        <Col> <label>የተማሪ ክፍል </label>
+        <Col md={3} xs={6}> <label>የተማሪ ክፍል </label>
         <select value={grade} onChange={(e) => setGrade(e.target.value)}
           className={emptyFields?.includes('grade') ? 'err' : ''}>
           <option>LKG</option>
@@ -230,7 +232,7 @@ function StudentRegister() {
           <option> 11</option>
           <option> 12</option>
         </select></Col>
-        <Col> <label>ወረዳ </label>
+        <Col md={3} xs={6}> <label>ወረዳ </label>
         <select value={district} onChange={(e) => setDistrict(e.target.value)}
           className={emptyFields?.includes('district') ? 'err' : ''}>
           <option>01</option>
@@ -250,7 +252,7 @@ function StudentRegister() {
         <Col md={3} xs={6}>
         <label>የተማሪ የቤት ቁጥር </label>
         <input type="text"
-          placeholder='የተማሪ የቤት ቁጥር'
+          placeholder='የቤት ቁጥር'
           value={houseNumber}
           onChange={(e) => setHouseNumber(e.target.value)}
           className={emptyFields?.includes('houseNumber') ? 'err' : ''}
@@ -259,7 +261,7 @@ function StudentRegister() {
         <Col md={3} xs={6}>
         <label>የተማሪ ወላጅ ስም </label>
         <input type="text" 
-        placeholder='የተማሪ ወላጅ ስም'
+        placeholder='የወላጅ ስም'
         value={parentName}
         onChange={(e) => setParentName(e.target.value)}
         className={emptyFields?.includes('parentName') ? 'err' : ''}
@@ -267,7 +269,7 @@ function StudentRegister() {
         <Col md={3} xs={6}> 
         <label>የተማሪ ወላጅ ስልክ 1 </label>
         <input type="text" 
-        placeholder='የተማሪ ወላጅ ስልክ 1'
+        placeholder='የወላጅ ስልክ 1'
         value={parentPhone1}
         onChange={(e) => setParentPhone1(e.target.value)}
         className={emptyFields?.includes('parentPhone1') ? 'err' : ''}
@@ -275,7 +277,7 @@ function StudentRegister() {
         <Col md={3} xs={6}>
         <label>የተማሪ ወላጅ ስልክ 2 </label>
         <input type="text" 
-        placeholder='የተማሪ ወላጅ ስልክ 2'
+        placeholder='የወላጅ ስልክ 2'
         value={parentPhone2}
         onChange={(e) => setParentPhone2(e.target.value)}
         className={emptyFields?.includes('parentPhone2') ? 'err' : ''}

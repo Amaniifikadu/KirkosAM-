@@ -932,9 +932,9 @@ button {
   .sideicon {
     display: block;
   }
-  .content-area {
+  /* .content-area {
    padding-left: 225px;
-  }
+  } */
   .register {
     width: 95%;
     height: auto;
