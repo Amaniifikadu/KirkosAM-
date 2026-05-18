@@ -47,8 +47,14 @@ const femaleCount = filteredStudents.filter(s => s.gender === 'ሴ').length;
 return (
     <div>
        <div className='dashboard'>
+         
+     <aside className={`sidebar ${isOpen ? 'show' : 'hide'}`}>
+         <div className='sidebar-top'>
+         <button className="sideicon" onClick={() => setIsOpen(false)}>
+            ☰
+          </button>
+          </div>
 
-      <aside className={`sidebar ${isOpen ? 'active' : ''}`}>
           <div className='logo'>
                  <img src="/kirkos2.png" alt="Kirkos sunday school logo" style={{width: "100px", height: "100px" }}/>
                 <span style={{color: "yellow"}}>ውሉደ ብርሃን </span>
@@ -61,11 +67,21 @@ return (
           <li className='logout'><Link to="/"><TbLogout /> Log Out</Link></li>
          </ul>
          </aside>
-           <button className="sideicon" onClick={() => setIsOpen(!isOpen)}>
+         
+          {!isOpen && (
+           <button
+           className="floating-icon"
+            onClick={() => setIsOpen(true)}
+            >
+              ☰
+           </button>
+              )}
+           {/* <button className="sideicon" onClick={() => setIsOpen(!isOpen)}>
             ☰
-          </button>
+          </button> */}
         
          <div className='content-area'>
+
               <h2>Welcome {username} 👋</h2>
               <Dropdown className='dropdown'>
              <Dropdown.Toggle>
@@ -110,7 +126,7 @@ return (
   </div>
              </div>
          </div>
-      </div>
+         </div>
   )
 }
 

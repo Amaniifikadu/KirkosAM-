@@ -21,13 +21,13 @@ const Navbar = () => {
             </div>
             <ul className={isOpen ? "nav-link active" : 'nav-link'}>
                   <li><Link to="/">Home</Link></li>
-                  <li><Link to="/about">About</Link></li>
-                  <li><Link to="/educations">Educations</Link></li>
+                  {/* <li><Link to="/about">About</Link></li>
+                  <li><Link to="/educations">Educations</Link></li> */}
                   <li><Link to="/signin">Sign In</Link></li>
             </ul>
-            <div className='iconnav' onClick={toggleMenu}>
+            {/* <div className='iconnav' onClick={toggleMenu}>
                 <FaBars />
-            </div>
+            </div> */}
         </nav>
         </div>
         </header>

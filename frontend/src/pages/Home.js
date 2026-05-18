@@ -179,12 +179,13 @@ function Home() {
       </Row>
 
     </Container>
-     <hr/>
+     <hr/> 
+      </div>
       <footer style={{textAlign: "center"}}>
         Copyright @2026
-      </footer> 
+      </footer>
       </div>
-      </div>
+      
    </div>
   )
 }
